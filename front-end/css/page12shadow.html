@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .container {
+            padding: 20px 44px;
+            margin: 20px 15px;
+            background-color: rgb(245, 245, 245);
+            color: #a10000;
+            width: 33%;
+            font-size: 77px;
+
+            /* box-shadow: sidewidth(in pixels) , [bottom width (negative numbers if you want the shadown upwardrs) ] */
+            box-shadow: 11px 11px rebeccapurple;
+            /* (blur radius , spread radius ) */
+            box-shadow: 8px 8px 2px 4px green;
+
+
+        }
+
+        h2 {
+            /* (same as box shadwon but no spread radius involved) */
+            text-shadow: 3px 4px 11px orange;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="box1">
+        <h2> Box 1 </h2>
+    </div>
+    <div class="container" id="box2">
+        <h2> Box 2</h2>
+    </div>
+    <div class="container" id="box3">
+        <h2> Box 3</h2>
+    </div>
+
+</body>
+
+</html>

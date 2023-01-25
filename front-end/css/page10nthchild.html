@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and nth child pseudo selectors</title>
+</head>
+<style>
+    .container {
+        display: block;
+        width: 300px;
+        margin: auto;
+        padding: 34px;
+    }
+
+    input {
+        display: block;
+    }
+
+    input[type='text'] {
+        padding: 23px;
+        border: 2px solid red;
+    }
+
+    a[target] {
+        font-size: 44px;
+        color: aquamarine;
+    }
+    li:nth-child(2n+0){
+        color: blueviolet;
+    }
+
+    /* odd  child  */
+li:nth-child(odd){
+    background-color: yellow;
+}
+</style>
+
+<body>
+    <h1> <a href="http://www.google.com" target="_blank"></a></h1>
+    <h1> <a href="http://www.facebook.com" target="_blank"></a></h1>
+    <div class="container">
+
+        <form action="" class="formcontrol">
+            <input type="text" name="" placeholder="enter you name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

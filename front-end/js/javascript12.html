@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript twelve | set timeout and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("something");
+        // settimeout  --> Allows us to run the function oncwe after the interval of time 
+        // cleartimeout --> Allows us to run the function repeadatedly after the interval of time
+
+        // function greet(name){
+        //     console.log("hello good morning " + name);
+        // }
+
+        // // timeout = setTimeout(greet, 5000, "harry");//correct syntax
+        // // // setTimeout(greet(), 5000, "harry");//incorrect syntax
+
+        // // clearTimeout(timeout);set
+
+        // intervalid = setInterval(greet, 1000, "harry");
+        // clearInterval(intervalid);
+        
+        function displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time ; 
+        }
+
+        setInterval(displaytime, 1000);
+
+        
+
+    </script>
+</body>
+</html>

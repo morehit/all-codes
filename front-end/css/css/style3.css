@@ -1,0 +1,51 @@
+*{
+    box-sizing: content-box;
+    background-color: #f2f2f2;
+    border: 10px solid rgb(14, 5, 2);
+    padding: 50px;
+    margin: 50px;
+}
+h1{
+    background-color: rgba(11, 226, 83, 0.26);
+    font-size: 150px;
+    font-weight: bold;
+}
+.form{
+    box-sizing: unset;
+}
+p{
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    border-width: 10px;
+    padding-left: 80px;
+}
+#name,#male,#female,#adharcard,#email{
+    font-size: 80px;
+    text-size-adjust: 80px;
+    size:50px ;
+}
+input{
+    font-size: 80px;
+}
+select{
+    font-size: 50px;
+}
+fieldset{
+    font-size: 50px;
+}
+h2{
+    font-size: 80px;
+}
+#submitbutton{
+    color: rgb(251, 255, 251);
+    background-color: rgb(40, 196, 40);
+    cursor:grab;
+    user-select: all;
+}
+#reset{
+    color: white;
+    background-color: rgb(255, 62, 49);
+    cursor:grab;
+    user-select: all;
+}

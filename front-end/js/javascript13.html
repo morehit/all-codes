@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Thirteen | date and time </title>
+    <style>
+        .container{
+            font-size: 45px;
+            background-color: aquamarine;
+            border: 4px solid blueviolet;
+            text-align: center;
+            border-radius: 100px;
+            padding: 50px;
+            margin: 20px;
+        }
+        #time{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    Current time is <span id="time"></span>
+    </div>
+    <script>
+        // console.log("this is date and time tutorial");
+        // let now = new Date();
+        // console.log(now);
+
+        // let dt = new Date();
+        // console.log(dt);
+
+        let newDate = new Date("2019-09-30");
+        // let newDate = new Date(year , month , date , hours , minutes , seconds , miliseconds);
+        // let newDate = new Date(3020, 4, 6, 9 , 34, 35, 29);
+        // console.log(newDate);
+
+        // let yr = newDate.getFullYear();
+        // console.log(yr);
+
+        // let dat = newDate.getDate();
+        // console.log(dat);
+        
+        // let time = newDate.getTime();
+        // console.log(time);
+
+        // newDate.setDate(33);
+        // console.log(newDate);
+
+        console.log(newDate);
+       function displaytime() {
+           time.innerHTML = new Date();
+           
+       }
+       setInterval(displaytime, 1000);
+    </script>
+</body>
+</html>

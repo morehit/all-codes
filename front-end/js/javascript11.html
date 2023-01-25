@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript eleven| event listenining</title>
+    <style>
+        #btn{
+            background-color: blueviolet;
+            border: 2px solid red;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is a heading </h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sunt veniam neque at necessitatibus eveniet recusandae dolor, quae quod vel autem minus! Voluptatum iste, cum, aliquam pariatur natus animi quasi obcaecati optio deserunt vitae, mollitia vero. Quae, quibusdam illo? Rerum nulla autem laborum ducimus numquam quidem doloremque illum a deleniti, facere consequuntur, dolores porro at unde illo fuga ipsum ut quae nemo voluptatem soluta saepe tempora placeat. Distinctio dolores deleniti aliquam nihil voluptates id molestias amet corrupti, laudantium voluptas sit sequi facere temporibus quasi hic esse vel dolore consequatur recusandae reiciendis maxime explicabo, vitae quos. Voluptatum inventore nemo minus nam modi aliquam cupiditate, suscipit vel temporibus quas totam deleniti vitae. Laboriosam, non debitis. Nam animi nemo, beatae dolor nihil facere expedita a, iusto voluptates soluta incidunt atque perspiciatis minus ab? Quo rerum accusamus numquam hic repellendus a ipsam minus unde quia eos quisquam impedit voluptates voluptatum ut architecto quaerat cum neque voluptatibus voluptas dolorem, aut obcaecati fugiat velit. Neque sunt cum iure repellendus commodi voluptas facilis amet quod, molestias quam labore minus nostrum suscipit eveniet non! Beatae eius consequatur, reprehenderit deleniti soluta autem repellendus illo, amet libero molestias nemo delectus placeat ullam ratione veritatis aliquam nulla exercitationem error quia? Fugiat tempora inventore sit eius voluptatem sint maxime harum, saepe laboriosam aspernatur eum illo vero soluta voluptates est fuga excepturi similique omnis. Mollitia necessitatibus voluptatem maiores nemo, libero, totam id laborum saepe non magnam voluptatibus.</p>
+
+    </div>
+    <button id="btn" onclick="hide()" >Show/Hide</button>
+    <script>
+    let para = document.getElementById('para'); 
+    para.addEventListener('mouseover', function(){
+        console.log("mouse inside");
+    });
+    para.addEventListener('mouseout', function(){
+        console.log("mouse now went outside");
+    });
+        function hide(){
+            // let btn = document.getElementById('btn'); 
+            // let para = document.getElementById('para'); 
+            
+            
+            if(para.style.display != 'none'){
+                 para.style.display = 'none' ;
+            }
+            else{
+                para.style.display = 'block';
+            }
+           
+
+
+        }
+    </script>
+</body>
+</html>

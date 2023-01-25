@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable custom properties</title>
+    <style>
+        :root{
+            --primary-color: blue ; 
+            /* (global variable) */
+            --mxw: 333px ; 
+        }
+
+       .box{
+           /* accessible only within the scope */
+        --box-color:blue;
+           width: 200px;
+           height: 200px;
+           background-color: var(--box-color);
+           border: 3px solid red;
+           margin: 2px 4px;
+       }
+       .container{
+           display: flex;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+</body>
+</html>

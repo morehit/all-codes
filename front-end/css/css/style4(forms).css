@@ -1,0 +1,82 @@
+form h1{
+    box-sizing: border-box;
+    border: 5px solid ;
+    margin: 10px;
+    padding: 50px;
+    background-color: rgba(130, 255, 28, 0.863);
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(132, 0, 255, 0.836);
+}
+
+
+    #personalinfo{
+    box-sizing: content-box;
+    max-width: inherit;
+    border: 5px solid ;
+    margin: 10px;
+    padding: 50px;
+    background-color: rgb(146, 228, 150);
+    
+}
+
+#paymentinfo{
+    box-sizing: content-box;
+    max-width:inherit;
+    border: 5px solid ;
+    margin: 10px;
+    padding: 50px;
+    background-color: rgb(219, 199, 172);
+
+}
+h2{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-size:40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+}
+p,fieldset{
+    box-sizing: content-box;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+input,textarea,select{
+    background-color: rgb(208, 250, 236);
+    border: 3px solid gray;
+    border-radius: 5%;
+    width: 250px;
+    height: 35px;
+    font-size: large;
+}
+#submit{
+    font-size: 25px ;
+    background-color: chartreuse ;
+    color: white;
+    width: 200px;
+    height: 40px;
+    
+}
+#reset{
+    font-size: 25px ;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 40px;
+}
+#address{
+    width: 200px;
+    height: 150px;
+}
+
+.address textarea{
+  vertical-align: top;
+  font-size: large;
+}

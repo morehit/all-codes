@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            /* background: url("images/wallpaperflare.com_wallpaper\ \(5\).jpg") no-repeat center center/cover ; */
+            
+
+        }
+        header::before{
+            content: "";
+            background: url("images/wallpaperflare.com_wallpaper\ \(5\).jpg") no-repeat center center/cover;
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+        .navigation {
+            display: flex;
+        }
+
+        section {
+
+            height: 300px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        /* section::before{
+            content:"this is a content"
+        } */
+        li {
+            list-style: none;
+            padding: 17px 25px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+  
+    </header>
+    <section>
+        <h1>Welcome to our Coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus possimus iusto sunt totam id
+            assumenda natus dignissimos, quae nihil saepe sapiente labore ipsam numquam perspiciatis! Distinctio
+            deserunt pariatur modi architecto saepe neque et eum? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quae non illum aliquid labore eaque natus, vitae eum quidem, facilis incidunt dolorem, velit
+            magnam aspernatur sequi numquam in beatae facere. Minima quidem nesciunt sunt pariatur.</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

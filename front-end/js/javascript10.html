@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script ten | navigating DOM(document object model)</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home </li>
+            <li>About Us </li>
+            <li>Contact Us </li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <script>
+        // let main = document.getElementById('main');
+        // console.log(main);
+
+        let containers = document.getElementsByClassName('container'); 
+        console.log(containers);
+
+        let sel = document.querySelector('#nav'); 
+        console.log(sel); 
+
+        let sell = document.querySelectorAll('#nav');
+        console.log(sel); 
+    </script>
+</body>
+</html>

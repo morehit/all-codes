@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css basics/css/style3.css">
+    <title>payment form</title>
+</head>
+<body>
+    <form action="" class="form"></form>
+    <h1>Payment Form</h1>
+    
+    <h2>Personal information</h2>
+    
+    <p>Name : *</p> <input type="text" name="name" id="name" required > <br>
+    <fieldset>
+        <legend>gender*</legend>
+        <input type="radio" name="gender" id="male" required>Male
+        <input type="radio" name="gender" id="female" required>Female
+    </fieldset>
+    
+    <br>
+   <p>Address :<textarea name="address" id="address" cols="80" rows="5" ></textarea> </p>
+      <p>adhar card number *:<input type="number" name="adhar number" id="adharnumber " required></p> 
+   <p>adhar card proof *:</p><input type="file" name="adhar card" id="adharcard"required><br>
+   <p>Email: *<input type="email" name="email" id="email" required></p>
+   
+   <h2>Payment information</h2>
+   
+   <p>card Name:*
+    <select required>
+       <option value="">--select a card--</option>
+       <option value="visa">Visa card</option>
+       <option value="Mastercard">Mastercard</option>
+       <option value="lisa">Lisa card</option>
+   </select>
+</p> 
+   <p>card Number* <input type="number" name="card number" id="card number" required></p>
+   <br>
+   <p>Expiry date * <input type="date" name="expiry" id="expiry" required></p>
+   <br>
+   <p>cvv number *:<input type="password" name="cvv" id="cvv" required></p> 
+   <br>
+
+   <input type="submit" id="submitbutton">
+   <input type="reset" value="reset" id="reset">
+
+
+</body>
+</html>

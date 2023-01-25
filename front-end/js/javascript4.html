@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string four| string function</title>
+</head>
+<body>
+    <div class="contianer">
+        <h1> this is hading</h1>
+    </div>
+    <script>
+        //zero indexing in the strings 
+        var str = "This is a string"; 
+        console.log(str)
+
+        //gives first occurance of substring
+        var position = str.indexOf('is');
+        console.log(position); 
+
+        //gives last occurance of substring 
+        position = str.lastIndexOf("is"); 
+        console.log(position)
+        
+        //extracts substring 
+        var substr = str.slice(1,6)
+        console.log(substr)
+        substr = str.substring(1,7)
+        console.log(substr)
+
+        //extracts length
+        var len = str.substr(1,3)
+        console.log(len)
+
+        //replace function
+        var replaced = str.replace('string' , 'mohit'); 
+        console.log(str)
+        console.log(replaced)
+
+        //uppercase lowercase
+        var up = str.toUpperCase();
+        console.log(up);
+        var lc= str.toLowerCase();
+        console.log(lc);
+
+        //concatenate
+        var newstring =  str.concat("newString"); 
+        console.log(newstring)
+        
+        //remove extra whitespaces from back and front 
+        var strwithwhitespace = "     this spaces              thdiiwwas        "; 
+        console.log(strwithwhitespace)
+        console.log(strwithwhitespace.trim()); 
+
+        //charachter extracting from a string 
+        var char3 = str.charAt(2); 
+        console.log(char3); 
+
+        char3 = str.charCodeAt(2)
+        console.log(char3); 
+
+        console.log(str[3])
+
+    </script>
+</body>
+</html>
